@@ -15,10 +15,16 @@ class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
+
+
+
+
     ): View? {
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
@@ -27,8 +33,6 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner, {
 
         })
-
-
 
 
         return root
